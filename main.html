@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Issues Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+   <div class="git-logo">
+     <div class="logo"><img src="assets/github-logo.png" alt=""></div>
+     <h2>GitHub Issues Tracker</h2>
+   </div>
+    <div>
+      <input type="text" id="searchInput" placeholder="Search issues...">
+      <button class="btn" id="searchBtn">Search</button>
+    </div>
+  </nav>
+
+  <div class="tabs">
+    <button id="allBtn" class="active">All</button>
+    <button id="openBtn">Open</button>
+    <button id="closedBtn">Closed</button>
+  </div>
+  <!-- Summary Section -->
+<div class="summary">
+  <div class="summary-left">
+    <div class="summary-icon"><img src="assets/Aperture.png" alt=""></div>
+    <div>
+      <h3 id="issueCount">0 Issues</h3>
+      <p>Track and manage your project issues</p>
+    </div>
+  </div>
+  <div class="summary-right">
+    <span class="dot open"></span> Open
+    <span class="dot closed"></span> Closed
+  </div>
+</div>
+
+
+  <div id="issuesGrid" class="grid"></div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

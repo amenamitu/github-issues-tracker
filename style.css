@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+}
+.btn{
+  background-color: #0366d6;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 30px;
+}
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  background: white;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color:#333;
+  background-color: white;
+  margin-bottom: 10px;
+}
+.git-logo{
+  display: flex;
+  align-items: center;
+}
+
+ .tabs {
+  margin: 20px;
+} 
+
+.tabs button {
+  margin: 0 15px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+}
+
+.tabs .active {
+  background: #0366d6;
+  color: white;
+} 
+.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 15px 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.summary-left {
+  display: flex;
+  align-items: center;
+}
+
+
+.summary-left h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.summary-left p {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.summary-right {
+  font-size: 14px;
+  color: #333;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.dot.open {
+  background: green;
+}
+
+.dot.closed {
+  background: purple;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.issue-card {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background: white;
+  margin: 10% auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 8px;
+}
+
+.hidden { display: none; }
